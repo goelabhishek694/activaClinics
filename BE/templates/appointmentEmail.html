@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #edf2f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #e8f0fe;
+            padding: 20px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 350px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            color: #3a5fcd;
+            font-size: 24px;
+            margin: 0 0 20px;
+        }
+        .content p {
+            margin: 0 0 20px;
+            color: #333;
+        }
+        .appointment-details {
+            text-align: center;
+            margin: 20px 0;
+            width: 60%;
+        }
+        .appointment-details p {
+            margin: 5px 0;
+        }
+        .appointment-details p.date {
+            color: #e53935;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .appointment-details .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e53935;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .icons img {
+            width: 50px;
+            margin: 0 20px;
+        }
+        .promo {
+            display: flex;
+            margin: 20px 0;
+        }
+        .promo img {
+            width: 50%;
+            border-radius: 8px;
+        }
+        .promo .promo-content {
+            padding: 20px;
+        }
+        .promo .promo-content h2 {
+            color: #3a5fcd;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        .promo .promo-content p {
+            margin: 0 0 20px;
+        }
+        .promo .promo-content .button {
+            background-color: #3a5fcd;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #e8f0fe;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer .footer-content div {
+            width: 45%;
+        }
+        .footer .footer-content div img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .footer .footer-content .footer-text {
+            padding: 20px;
+            text-align: left;
+        }
+        .footer .footer-content .footer-text h2 {
+            color: #3a5fcd;
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .footer .footer-content .footer-text p {
+            margin: 0 0 10px;
+        }
+        .footer .footer-content .footer-text .button {
+            background-color: #3a5fcd;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .items{
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .appointment-info{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="cid:logo" alt="Activa Clinics Logo">
+        </div>
+        <div class="content">
+            <h1>Appointment Confirmation</h1>
+            <p>Dear #{name},</p>
+            <p>Thank you for your appointment request! We’ll be in touch shortly to confirm the timing and finalize the details.</p>
+            <p>Issue : #{service}</p>
+            <div class="appointment-info" style="display: flex;">
+                <div class="appointment-details">
+                    <p class="date">#{day}, #{month} #{date}th<br>at #{location}</p>
+                    <p class="date">Prefferred Time: #{hours}:#{minutes}</p>
+                    <a href="#" class="button">Add to Calendar</a>
+                </div>
+                <div class="items">
+                    <p>Please remember to bring:</p>
+                    <ul>
+                        <li>Insurance card and ID</li>
+                        <li>Mask</li>
+                        <li>Payment method (we accept all major credit and debit cards)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="icons" style="display: flex; justify-content:space-around; align-items: center; color: #e53935; font-weight: bold;">
+            <div>
+                <a href="tel:+1 (905) 593-7770" style="font-size: 30px; text-decoration: none;">📞</a>
+                <p>Call</p>
+            </div>
+            <div>
+                <a href="mailto:intakeactiva@activaclinics.com" style="font-size: 30px; text-decoration: none;">📧</a>
+                <p>Email</p>
+            </div>
+            <!-- <div>
+                <a href="https://maps.app.goo.gl/4NWzPYid3uqAi7qV7" style="font-size: 30px; text-decoration: none;">🕗</a>
+                <p>Open</p>
+            </div> -->
+        </div>
+        <!-- <div class="promo">
+            <img src="cid:promo-image-1" alt="Promo Image 1">
+            <div class="promo-content">
+                <h2>30% OFF Physiotherapy</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                <a href="#" class="button">Book Now</a>
+            </div>
+        </div> -->
+        <div class="footer">
+            <div class="footer-content">
+                <img src="cid:promo-image" height="150px" width="150px" alt="Promo Image 2">
+                <div class="footer-text">
+                    <h2>RATED #1 IN THE CITY</h2>
+                    <p>Welcome to Activa Clinics! Our cutting-edge wellness services and conveniently located five Clinics in the GTA helps you to start feeling your best again! </p>
+                    <!-- <a href="#" class="button">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

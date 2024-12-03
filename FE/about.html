@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Activa Clinics - Quality Healthcare Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content=" " name="keywords">
+    <meta content=" " name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00
+                        am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <a class="m-0" href="mailto:intakeactiva@activaclinics.com" style="color: white;"><i
+                                class="fa fa-envelope-open me-2"></i>intakeactiva@activaclinics.com</a>
+                    </div>
+                    <div class="py-2">
+                        <a class="m-0" href="tel:+1 (905) 593-7770" style="color: white;">
+                            <i class="fa fa-phone-alt"></i>
+                            +1 (905) 593-7770</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <!-- <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><i class="fa me-2"></i>Activa Clinics</h1>
+        </a> -->
+        <!-- <img class="img-fluid mx-auto rounded mb-4" src="img/Activa Logo.png" alt=""> -->
+        <img class="img-fluid mx-auto rounded" src="img/Activa Logo.png" alt="" style="max-width: 350px;">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="conditions.html" class="nav-item nav-link">Conditions</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Locations</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="index.html#clinicLocation" class="dropdown-item">All</a>
+                        <a href="brampton.html" class="dropdown-item">Brampton</a>
+                        <a href="mississuaga.html" class="dropdown-item">Mississuaga</a>
+                        <a href="scarborough.html" class="dropdown-item">Scarborough</a>
+                        <a href="kitchener.html" class="dropdown-item">Kitchener</a>
+                        <a href="hamilton.html" class="dropdown-item">Hamilton</a>
+                        <a href="inhome.html" class="dropdown-item">In Home Treatment</a>
+                    </div>
+                </div>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                    class="fa fa-search"></i></button>
+            <a href="#appointment" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">About Us</h1>
+                <a href="" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">About</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title mb-4">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">ABOUT ACTIVA CLINICS</h5>
+                        <h1 class="display-5 mb-0">Ontario's Best Clinic That You Can Trust</h1>
+                    </div>
+                    <h4 class="text-body fst-italic mb-4">Activa Clinics is redefining the way healthcare is delivered in Canada. From its unique multidisciplinary model of
+                    healthcare professionals working together under one roof to help Patients achieve their pre-injury status, to the latest
+                    in equipment and technology, to highly experienced and knowledgeable staff – Activa Clinics is at the leading edge of
+                    healthcare delivery in the community and the country.</h4>
+                    <p class="mb-4">The focus of the Company and the Clinics is the Patient. Because patient care is at the core and very heart of what we
+                    do, each Patient is provided with a customized treatment plan to help them achieve their goals. Whether a patient has
+                    been injured in a car accident, has pulled a muscle in their back, fallen while shovelling the snow or is in pain from
+                    standing at their job all day, Activa Clinics has a number of services and programs that can help.</p>
+                    <!-- <div class="row g-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Award Winning</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Staff</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Opened</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Fair Prices</h5>
+                        </div>
+                    </div> -->
+                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Make Appointment</a>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="" style="object-fit: cover;" alt="dr. ruby photo/healthcare photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="" style="object-fit: cover;" alt="dr. ruby photo/healthcare photo">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title mb-4">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">INTEGRATION & INNOVATION</h5>
+                        <h1 class="display-5 mb-0">Your Trusted Healthcare Partner</h1>
+                    </div>
+                    <h4 class="text-body fst-italic mb-4">As a Champion of Integration and Innovation, Activa Clinics has been a pioneer in the Rehabilitation Industry in Ontario, with one of the first multidisciplinary healthcare clinics opening in 1999. Twenty-five years later, Activa Clinics is again leading the way with its incorporation of Tele-Health services to help Patients obtain access to Health Care professionals, anytime and anywhere, as per their convenience and the comfort of their home.</h4>
+                    <p class="mb-4">The focus of the Company and the Clinics is the Patient. Because patient care is at the core and very heart of what we
+                    do, each Patient is provided with a customized treatment plan to help them achieve their goals. Whether a patient has
+                    been injured in a car accident, has pulled a muscle in their back, fallen while shovelling the snow or is in pain from
+                    standing at their job all day, Activa Clinics has a number of services and programs that can help.</p>
+                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Make Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title mb-4">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Pioneer In Healthcare Services</h5>
+                        <h1 class="display-5 mb-0">Activa Clinics Is Here To Help</h1>
+                    </div>
+                    <h4 class="text-body fst-italic mb-4">Activa Clinics has continued to promote and advocate for accessibility of healthcare services for all Patients, regardless of where they live, work or play. We have redefined the way healthcare is delivered to communities and cities among Aboriginal Populations, with the introduction of Tele-Health Services. These services allow patients on reserves to access medical and paramedical services immediately via local health centers. As an advisor and consultant to some of the largest First Nations communities in Canada – Activa Clinics is at the forefront of championing change to make a difference.</h4>
+                    <p class="mb-4">To ensure health, wellness and healthy lifestyles, Activa Clinics has also recently launched mental health counselling. For those patients suffering from post-traumatic stress, postpartum depression, anxiety or depression, the mental health services will help empower patients to feel and be their best.</p>
+                    <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">Make Appointment</a>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="" style="object-fit: cover;" alt="dr. ruby photo/healthcare photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <div class="flex-container-mission">
+        <div class="flex-slide-mission home-mission">
+            <div class="flex-title-mission flex-title-home-mission">Mission</div>
+            <div class="flex-about-mission flex-about-home-mission">
+                <p>"Passion becomes your Purpose and your Purpose becomes Your Profession. At Activa Clinics we are motivated to empower and inspire our patients to feel their best and be their best."</p>
+            </div>
+        </div>
+        <div class="flex-slide-mission about-mission">
+            <div class="flex-title-mission">Vision</div>
+            <div class="flex-about-mission">
+                <p>
+                <ul>
+                    <li>Our vision 20 years ago when our company was founded, and our vision today, remains the same - </li>
+                    <li>for Patient-Focused Health Care to be at the Core of what we do and for Activa Clinics to be at the forefront of the Healthcare, Rehabilitation and Tele-Health Industries as champions of Integration, Innovation and Patient Empowerment in our community and our country.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="flex-slide-mission work-mission">
+            <div class="flex-title-mission">Passion</div>
+            <div class="flex-about-mission">
+                <p>Passion becomes your Purpose and your Purpose becomes Your Profession. At Activa Clinics we are motivated to empower and inspire our patients to feel their best and be their best.</p>
+            </div>
+        </div>
+        <div class="flex-slide-mission contact-mission">
+            <div class="flex-title-mission">Purpose</div>
+            <div class="flex-about-mission">
+                <p>Our Patients are our Purpose.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                            Services</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest
+                            Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                            Services</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest
+                            Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Ontario</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>intakeactiva@activaclinics.com
+                    </p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+1 (905) 593-7770</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Activa Clinics</a>. All
+                        Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with ❤️ by <a class="text-white border-bottom"
+                            href="https://www.linkedin.com/in/goelabhishek694/" target="_blank"
+                            rel="noopener noreferrer">Abhishek Goel</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="./js/about.js"></script>
+</body>
+
+</html>
