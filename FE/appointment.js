@@ -1,4 +1,5 @@
 // script.js
+const API_BASE_URL = process.env.APP_API_BASE_URL || 'http://localhost:3000';
 const form = document.getElementById('emailForm');
 console.log(form);
 form.addEventListener('submit', async (event) => {
@@ -14,7 +15,7 @@ form.addEventListener('submit', async (event) => {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/send-email', {
+        const response = await fetch(`${API_BASE_URL}/send-email`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
