@@ -1,7 +1,7 @@
 // signup-> on signup send email , welcome
 // preparation welcome email template -> placeholders for name
 // execution -> take that template -> read -> string -> replace -> actual value
-
+const {USER_EMAIL, USER_PASS} = process.env;
 const nodemailer = require("nodemailer");
 const path = require("path");
 const fs = require("fs");
@@ -11,8 +11,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: "activamarketing6610@gmail.com",
-    pass: "mhvgnfeuibxoawwx",
+    user: USER_EMAIL,
+    pass: USER_PASS,
   },
 });
 
