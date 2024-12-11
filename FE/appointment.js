@@ -1,5 +1,5 @@
 // script.js
-const API_BASE_URL = process.env.APP_API_BASE_URL || 'http://localhost:3000';
+const API_BASE_URL = 'http://localhost:3000';
 const form = document.getElementById('emailForm');
 console.log(form);
 form.addEventListener('submit', async (event) => {
