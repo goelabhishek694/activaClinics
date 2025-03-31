@@ -377,3 +377,39 @@ h6,
   color: white;
   transform: rotateY(180deg);
 }
+
+/* Direct Billing Animation */
+@keyframes attention-grabber {
+    0% {
+        transform: scale(1);
+        color: var(--primary);
+        filter: brightness(100%);
+    }
+    25% {
+        transform: scale(1.05);
+        color: #ff4d4d;
+        filter: brightness(120%);
+    }
+    50% {
+        transform: scale(1);
+        color: var(--primary);
+        filter: brightness(100%);
+    }
+    75% {
+        transform: scale(1.05);
+        color: #ff4d4d;
+        filter: brightness(120%);
+    }
+    100% {
+        transform: scale(1);
+        color: var(--primary);
+        filter: brightness(100%);
+    }
+}
+
+.animate-pulse {
+    animation: attention-grabber 2s ease-in-out infinite;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0,0,0,0.1);
+}

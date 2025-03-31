@@ -18,6 +18,13 @@
     color: white;
 }
 
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
 /* Carousel Items */
 .testimonial-carousel {
     display: flex;
@@ -28,6 +35,12 @@
 .testimonial-item {
     min-width: 100%;
     transition: 0.5s;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .testimonial-item img {
@@ -38,15 +51,63 @@
     border: 3px solid white;
 }
 
+@media (max-width: 768px) {
+    .testimonial-item img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+}
+
 .testimonial-item p {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 15px 0;
     opacity: 0.9;
+    max-width: 80%;
+    line-height: 1.6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.container-fluid.py-5 .testimonial-item p {
+    overflow: visible;
+    display: block;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    text-overflow: unset;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .testimonial-item p {
+        font-size: 14px;
+        margin: 10px 0;
+        max-width: 95%;
+        line-height: 1.4;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    
+    .container-fluid.py-5 .testimonial-item p {
+        margin: 15px 0;
+        line-height: 1.6;
+    }
 }
 
 .testimonial-item h4 {
     font-size: 18px;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .testimonial-item h4 {
+        font-size: 16px;
+    }
 }
 
 .testimonial-item h3 {
