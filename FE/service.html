@@ -42,8 +42,14 @@
         --dark-grey: #1f1a25;
       }
 
-      /* Button Styles */
-      button,
+      /* Program List Styles */
+      .program-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .program-list li,
       .btn-primary,
       .btn-secondary,
       .btn-secondary-custom {
@@ -56,58 +62,43 @@
         padding: 1rem 2rem;
         font-size: 1rem;
         margin-bottom: 1rem;
-        cursor: pointer;
+        cursor: default;
         outline: none;
         transform: translateY(0);
+        display: inline-block;
       }
 
-      button,
+      .program-list li.btn-primary,
       .btn-primary {
         background-color: #3eb9ee;
         box-shadow: 0 8px rgba(0, 0, 0, 0.2);
       }
 
-      button:hover,
-      .btn-primary:hover,
-      button:focus,
-      .btn-primary:focus {
+      .program-list li.btn-primary:hover,
+      .btn-primary:hover {
         background-color: #0168aa;
       }
 
-      button:active,
-      .btn-primary:active {
-        transform: translateY(4px);
-        box-shadow: 0 3px rgba(0, 0, 0, 0.2);
-      }
-
+      .program-list li.btn-secondary,
       .btn-secondary {
         background-color: #7ac141;
         box-shadow: 0 8px rgba(0, 0, 0, 0.2);
       }
 
-      .btn-secondary:hover,
-      .btn-secondary:focus {
+      .program-list li.btn-secondary:hover,
+      .btn-secondary:hover {
         background-color: #45b96c; /* darken(var(--purple), 10%) */
       }
 
-      .btn-secondary:active {
-        transform: translateY(4px);
-        box-shadow: 0 3px rgba(0, 0, 0, 0.2);
-      }
-
+      .program-list li.btn-secondary-custom,
       .btn-secondary-custom {
         background-color: #f89728;
         box-shadow: 0 8px rgba(0, 0, 0, 0.2);
       }
 
-      .btn-secondary-custom:hover,
-      .btn-secondary-custom:focus {
+      .program-list li.btn-secondary-custom:hover,
+      .btn-secondary-custom:hover {
         background-color: #e42b5c; /* darken(var(--yellow), 10%) */
-      }
-
-      .btn-secondary-custom:active {
-        transform: translateY(4px);
-        box-shadow: 0 3px rgba(0, 0, 0, 0.2);
       }
 
       .multi-button-container {
@@ -115,7 +106,7 @@
         flex-wrap: wrap;
         /* justify-content:space-between */
       }
-      .multi-button-container > button {
+      .multi-button-container > li {
         margin: 1rem;
       }
     </style>
@@ -156,7 +147,6 @@
       <!-- <div class="flip-card col-md-4"> -->
       <!-- <div class="flip-card-inner"> -->
       <div href="/about.html" class="col-md-4 service-item flip-card-front">
-        <a href="#">
           <div class="rounded-top overflow-hidden">
             <img class="img-service" src="img/8443649.jpg" alt="" />
           </div>
@@ -165,7 +155,6 @@
           >
             <h5 class="m-0">Physiotherapy</h5>
           </div>
-        </a>
       </div>
       <!-- </div> -->
       <!-- </div> -->
@@ -273,21 +262,21 @@
     <!--Program start-->
 
     <h2 style="text-align: center; margin: 1rem">Programs</h2>
-    <div class="multi-button-container">
-      <button class="btn-primary">Chronic Pain</button>
-      <button class="btn-secondary">In Home Rehab</button>
-      <button class="btn-secondary-custom">Weight Loss</button>
-      <button class="btn-primary">Mental Health</button>
-      <button class="btn-secondary">Vestibular Rehab</button>
-      <button class="btn-secondary-custom">Car Accident Rehab</button>
-      <button class="btn-primary">Smoking Sessation</button>
-      <button class="btn-secondary">Corporate Health</button>
-      <button class="btn-secondary-custom">Work Conditioning</button>
-      <button class="btn-primary">Pelvic Floor Therapy</button>
-      <button class="btn-secondary">Cardiac Rehabiliation</button>
-      <button class="btn-secondary-custom">Sports Injury Rehab</button>
-      <button class="btn-primary">Neurological Rehab</button>
-    </div>
+    <ul class="multi-button-container program-list">
+      <li class="btn-primary">Chronic Pain</li>
+      <li class="btn-secondary">In Home Rehab</li>
+      <li class="btn-secondary-custom">Weight Loss</li>
+      <li class="btn-primary">Mental Health</li>
+      <li class="btn-secondary">Vestibular Rehab</li>
+      <li class="btn-secondary-custom">Car Accident Rehab</li>
+      <li class="btn-primary">Smoking Sessation</li>
+      <li class="btn-secondary">Corporate Health</li>
+      <li class="btn-secondary-custom">Work Conditioning</li>
+      <li class="btn-primary">Pelvic Floor Therapy</li>
+      <li class="btn-secondary">Cardiac Rehabiliation</li>
+      <li class="btn-secondary-custom">Sports Injury Rehab</li>
+      <li class="btn-primary">Neurological Rehab</li>
+    </ul>
 
     <!--Program end-->
     <!-- Service Start -->
@@ -403,7 +392,7 @@
             <div
               class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4"
             >
-              <h3 class="text-white mb-3">Make Appointment</h3>
+              <h3 class="text-white mb-3">Book Appointment</h3>
               <p class="text-white mb-3">
                 Finding it diffcult to move? Are you suffering from neck pain,
                 back pain, or joint pain? We are here to HELP!

@@ -58,9 +58,12 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
       }
 
-      .condition-grid a {
+      .condition-grid li {
         background-color: #fff;
         padding: 10px;
         border-radius: 5px;
@@ -71,9 +74,10 @@
         transition: background-color 0.3s ease, transform 0.3s ease;
         position: relative;
         overflow: hidden;
+        cursor: default;
       }
 
-      .condition-grid a::before {
+      .condition-grid li::before {
         content: "";
         position: absolute;
         top: 0;
@@ -85,22 +89,8 @@
         transition: transform 0.3s ease;
       }
 
-      .condition-grid a:hover::before {
+      .condition-grid li:hover::before {
         transform: translateX(0);
-      }
-
-      .condition-grid a:hover {
-        background-color: #ddd;
-        transform: scale(1.05);
-      }
-
-      .condition-grid a:active {
-        transform: scale(0.95);
-      }
-
-      .condition-grid a:hover {
-        background-color: #ddd;
-        transform: scale(1.05);
       }
 
       @keyframes bounce {
@@ -119,7 +109,9 @@
         }
       }
 
-      .condition-grid a:hover {
+      .condition-grid li:hover {
+        background-color: #ddd;
+        transform: scale(1.05);
         animation: bounce 1s;
       }
     </style>
@@ -158,61 +150,61 @@
 
     <div class="conditions">
       <h2>Body Pain Conditions</h2>
-      <div class="condition-grid">
-        <a href="#">Back Pain</a>
-        <a href="#">Neck Pain</a>
-        <a href="#">Shoulder Pain</a>
-        <a href="#">Elbow Pain</a>
-        <a href="#">Hand Pain</a>
-        <a href="#">Wrist Pain</a>
-        <a href="#">Knee Pain</a>
-        <a href="#">Foot Pain</a>
-        <a href="#">Bursitis</a>
-        <a href="#">Headaches</a>
-        <a href="#">Frozen Shoulder</a>
-        <a href="#">Achilles Tendonitis</a>
-        <a href="#">Shin Splints</a>
-        <a href="#">Trigger Finger</a>
-        <a href="#">Golfer’s Elbow and Tennis Elbow</a>
-      </div>
+      <ul class="condition-grid">
+        <li>Back Pain</li>
+        <li>Neck Pain</li>
+        <li>Shoulder Pain</li>
+        <li>Elbow Pain</li>
+        <li>Hand Pain</li>
+        <li>Wrist Pain</li>
+        <li>Knee Pain</li>
+        <li>Foot Pain</li>
+        <li>Bursitis</li>
+        <li>Headaches</li>
+        <li>Frozen Shoulder</li>
+        <li>Achilles Tendonitis</li>
+        <li>Shin Splints</li>
+        <li>Trigger Finger</li>
+        <li>Golfer's Elbow and Tennis Elbow</li>
+      </ul>
 
       <h2>Chronic Conditions</h2>
-      <div class="condition-grid">
-        <a href="#">Chronic Pain Condition</a>
-        <a href="#">Cardiovascular Disease</a>
-        <a href="#">Obesity</a>
-        <a href="#">Arthritis</a>
-        <a href="#">Diabetes</a>
-        <a href="#">Osteoporosis</a>
-        <a href="#">Cervical Osteoarthritis</a>
-        <a href="#">Carpal Tunnel Syndrome Therapy</a>
-        <a href="#">TMJ Therapy</a>
-        <a href="#">Myofascial Pain Syndrome</a>
-        <a href="#">Degenerative Disc Disease</a>
-        <a href="#">Lumbar Spondylosis</a>
-        <a href="#">Patellar Tendonitis (Jumper’s Knee)</a>
-      </div>
+      <ul class="condition-grid">
+        <li>Chronic Pain Condition</li>
+        <li>Cardiovascular Disease</li>
+        <li>Obesity</li>
+        <li>Arthritis</li>
+        <li>Diabetes</li>
+        <li>Osteoporosis</li>
+        <li>Cervical Osteoarthritis</li>
+        <li>Carpal Tunnel Syndrome Therapy</li>
+        <li>TMJ Therapy</li>
+        <li>Myofascial Pain Syndrome</li>
+        <li>Degenerative Disc Disease</li>
+        <li>Lumbar Spondylosis</li>
+        <li>Patellar Tendonitis (Jumper's Knee)</li>
+      </ul>
 
       <h2>Injuries and Conditions</h2>
-      <div class="condition-grid">
-        <a href="#">Car Accidents Injury</a>
-        <a href="#">Workplace Injury</a>
-        <a href="#">Slip Fall Injury</a>
-        <a href="#">Fracture</a>
-        <a href="#">IT Band Syndrome</a>
-        <a href="#">Plantar Fasciitis</a>
-        <a href="#">Tendonitis and Tendonosis</a>
-        <a href="#">Sciatica</a>
-        <a href="#">Sports Injury</a>
-        <a href="#">Scoliosis</a>
-        <a href="#">Frozen Shoulder</a>
-        <a href="#">Bursitis</a>
-        <a href="#">Shin Splints</a>
-        <a href="#">Trigger Finger</a>
-        <a href="#">Achilles Tendonitis</a>
-        <a href="#">Golfer’s Elbow and Tennis Elbow</a>
-        <a href="#">Degenerative Disc Disease</a>
-      </div>
+      <ul class="condition-grid">
+        <li>Car Accidents Injury</li>
+        <li>Workplace Injury</li>
+        <li>Slip Fall Injury</li>
+        <li>Fracture</li>
+        <li>IT Band Syndrome</li>
+        <li>Plantar Fasciitis</li>
+        <li>Tendonitis and Tendonosis</li>
+        <li>Sciatica</li>
+        <li>Sports Injury</li>
+        <li>Scoliosis</li>
+        <li>Frozen Shoulder</li>
+        <li>Bursitis</li>
+        <li>Shin Splints</li>
+        <li>Trigger Finger</li>
+        <li>Achilles Tendonitis</li>
+        <li>Golfer's Elbow and Tennis Elbow</li>
+        <li>Degenerative Disc Disease</li>
+      </ul>
     </div>
     <!-- Newsletter Start -->
     <div
