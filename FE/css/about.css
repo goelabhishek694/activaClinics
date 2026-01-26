@@ -89,6 +89,10 @@ body-mission {
 	-webkit-flex-grow: 3;
 	flex-grow: 3;
 }
+
+.flex-slide-mission:hover .flex-about-mission {
+	opacity: 1;
+}
 .home-mission {
 	height: 100vh;
 	background: rgb(63,94,251);
@@ -190,6 +194,32 @@ textarea-mission {
 	background-position: center center;
 	background-attachment: fixed;
 }
+
+@media screen and (max-width: 768px) {
+	.flex-slide-mission.contact-mission {
+		background: #5c3a1a !important;
+		background-image: linear-gradient(180deg, rgb(126, 103, 2) 0%, rgb(155, 131, 11) 50%, rgb(192, 182, 5) 100%) !important;
+		background-size: cover !important;
+		background-position: center center !important;
+		background-attachment: scroll !important;
+		background-repeat: no-repeat !important;
+	}
+	
+	.flex-slide-mission.contact-mission .flex-title-mission {
+		color: #ffffff !important;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) !important;
+	}
+	
+	.flex-slide-mission.contact-mission .flex-about-mission {
+		color: #ffffff !important;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+	}
+	
+	.flex-slide-mission.contact-mission .flex-about-mission p {
+		color: #ffffff !important;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+	}
+}
 .work-mission {
 	/* background-color: #20B159; */
 	background: linear-gradient(110.1deg, rgb(34, 126, 34) 32.9%, rgb(168, 251, 60) 90.3%);
@@ -252,5 +282,92 @@ textarea-mission {
   } 100% { 
     transform: rotate(-360deg);
     -webkit-transform: rotate(-360deg);
+  }
+}
+
+/* Responsive gap adjustments for About page images */
+@media (max-width: 650px) {
+  .container-fluid .container .row.g-5 {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0.5rem !important;
+  }
+  
+  .container-fluid .container .row.g-5 > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: var(--bs-gutter-y) !important;
+  }
+  
+  /* Reduce min-height on image columns */
+  .container-fluid .container .row.g-5 [class*="col-"] {
+    min-height: auto !important;
+  }
+  
+  .container-fluid .container .row.g-5 [class*="col-"] > div {
+    min-height: auto !important;
+    height: auto !important;
+  }
+  
+  .container-fluid .container .row.g-5 [class*="col-"] img {
+    position: relative !important;
+    height: auto !important;
+    max-height: 300px !important;
+  }
+  
+  /* Reduce vertical spacing between sections */
+  .container-fluid.py-5 .container {
+    margin-bottom: 1rem !important;
+  }
+  
+  .container-fluid.py-5 .container:not(:last-child) {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-fluid .container .row.g-5 {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0.25rem !important;
+  }
+  
+  .container-fluid .container .row.g-5 > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-top: var(--bs-gutter-y) !important;
+  }
+  
+  /* Further reduce image height on very small screens */
+  .container-fluid .container .row.g-5 [class*="col-"] img {
+    max-height: 250px !important;
+  }
+  
+  /* Further reduce vertical spacing on very small screens */
+  .container-fluid.py-5 .container {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .container-fluid.py-5 .container:not(:last-child) {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+  .container-fluid .container .row.g-5 {
+    --bs-gutter-x: 0.25rem !important;
+    --bs-gutter-y: 0.75rem !important;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 991px) {
+  .container-fluid .container .row.g-5 {
+    --bs-gutter-x: 1.5rem !important;
+    --bs-gutter-y: 2rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid .container .row.g-5 {
+    --bs-gutter-x: 3rem !important;
+    --bs-gutter-y: 3rem !important;
   }
 }
