@@ -68,6 +68,16 @@ h6,
     text-align: center;
 }
 
+/* Footer social icons: larger size and centered in blue box */
+.footer-social .btn.btn-lg-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social .btn.btn-lg-square i {
+    font-size: 1.35rem;
+}
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -486,4 +496,25 @@ h6,
     display: inline-block;
     font-weight: bold;
     text-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Services Offered section - match container placement (location pages) */
+.container .conditions {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media (min-width: 992px) {
+    .condition-grid {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1rem;
+    }
+    .condition-grid a {
+        flex: none !important;
+        min-width: 0;
+    }
 }
