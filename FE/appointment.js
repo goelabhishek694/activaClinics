@@ -1,5 +1,5 @@
 // script.js
-const API_BASE_URL = 'http://167.88.45.58:3000';
+const API_BASE_URL = '';
 const form = document.getElementById('emailForm');
 console.log(form);
 form.addEventListener('submit', async (event) => {
